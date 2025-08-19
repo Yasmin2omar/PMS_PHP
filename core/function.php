@@ -66,9 +66,10 @@ function loginUser($email,$password){
             $_SESSION['user']=[
                 'password'=>$user['password'],
                 'email'=>$user['email']
-            ];
+            ]
+            ;return true;
         }
-        return true;
+        
     }
     return false;
 }

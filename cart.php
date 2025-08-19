@@ -1,4 +1,7 @@
-
+<?php if (session_status() === PHP_SESSION_NONE) {
+    session_start();
+}
+?>
 <?php require_once('inc/header.php'); ?>
 <?php include_once __DIR__."/handlers/addToCart_handler.php";?>
 

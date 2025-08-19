@@ -1,3 +1,7 @@
+<?php if (session_status() === PHP_SESSION_NONE) {
+    session_start();
+}
+?>
 <?php require_once ('inc/header.php'); ?>
 <?php include_once("handlers/home_handler.php");?>
         <!-- Header-->
@@ -33,15 +37,15 @@
                                         <div class="bi-star-fill"></div>
                                     </div>
                                     <!-- Product price-->
-                                    <span class="text-muted text-decoration-line-through"><?="$". $product['old_price'] ?></span>
-                                    <?="$". $product['price'] ?>
+                                    <span class="text-muted text-decoration-line-through">$<?= $product['old_price'] ?></span>
+                                    <span class="fw-bold text-dark ms-2">$<?= $product['price'] ?></span>
                                 </div>
                             </div>
                             <!-- Product actions-->
                             <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
                                 <div class="text-center">
                                 <form method="POST" action="handlers/addToCart_handler.php">
-                                    <input type="hidden" name="productId"value="<?= $product['id'] ?>">
+                                    <input type="hidden" name="productId"value="<?= $product['id']?>">
                                     <input type="hidden" name="img" value="<?= $product['img'] ?>">
                                     <input type="hidden" name="name" value="<?= $product['name'] ?>">
                                     <input type="hidden" name="price" value="<?= $product['price'] ?>">

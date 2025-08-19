@@ -1,4 +1,7 @@
 <?php 
+if (session_status() === PHP_SESSION_NONE) {
+    session_start();
+}
 include("../core/validation.php");
 include("../core/function.php");
 if($_SERVER['REQUEST_METHOD']=="POST"){

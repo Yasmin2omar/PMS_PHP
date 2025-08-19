@@ -1,4 +1,8 @@
 <?php
+if (session_status() === PHP_SESSION_NONE) {
+    session_start();
+}
+
 include_once("../core/function.php");
 if($_SERVER['REQUEST_METHOD']=="GET" ){
     $productJson=__DIR__."/../data/products.json";

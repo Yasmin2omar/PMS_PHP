@@ -1,4 +1,8 @@
 <?php
+if (session_status() === PHP_SESSION_NONE) {
+    session_start();
+}
+
 include_once __DIR__."/../core/function.php";
 if($_SERVER['REQUEST_METHOD']=="POST"){
     $search=$_POST['search'];

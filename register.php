@@ -1,3 +1,7 @@
+<?php if (session_status() === PHP_SESSION_NONE) {
+    session_start();
+}
+?>
 <?php include("inc/header.php")  ?>
 <?php include_once("core/function.php") ?>
 <section class="py-5 d-flex align-items-center">
