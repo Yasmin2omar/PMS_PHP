@@ -1,0 +1,86 @@
+[
+    {
+        "id": 1,
+        "name": "Medicube Salmon",
+        "img": "https:\/\/m.media-amazon.com\/images\/I\/615DOoCI6xL._AC_UL480_FMwebp_QL65_.jpg",
+        "price": "18.00",
+        "old_price": "25.00"
+    },
+    {
+        "id": 2,
+        "name": "Medicube Collagen",
+        "img": "https:\/\/m.media-amazon.com\/images\/I\/61occWCJN-L._AC_UL480_FMwebp_QL65_.jpg",
+        "price": "19.00",
+        "old_price": "25.00"
+    },
+    {
+        "id": 3,
+        "name": "IMAGE Skincare",
+        "img": "https:\/\/m.media-amazon.com\/images\/I\/61qCGEA1aYL._AC_UL480_FMwebp_QL65_.jpg",
+        "price": "50.00",
+        "old_price": "75.00"
+    },
+    {
+        "id": 4,
+        "name": "Paula's Choice",
+        "img": "https:\/\/m.media-amazon.com\/images\/I\/61UvFZvaXCL._AC_UL480_FMwebp_QL65_.jpg",
+        "price": "65.00",
+        "old_price": "85.00"
+    },
+    {
+        "id": 5,
+        "name": "DRMTLGY Anti-Aging",
+        "img": "https:\/\/m.media-amazon.com\/images\/I\/51Caunm2baL._AC_UL480_FMwebp_QL65_.jpg",
+        "price": "31.00",
+        "old_price": "50.00"
+    },
+    {
+        "id": 6,
+        "name": "Mixsoon Bean",
+        "img": "https:\/\/m.media-amazon.com\/images\/I\/51KZcRXDy9L._AC_UL480_FMwebp_QL65_.jpg",
+        "price": "20.00",
+        "old_price": "40.00"
+    },
+    {
+        "id": 7,
+        "name": "Medicube Zero Pore",
+        "img": "https:\/\/m.media-amazon.com\/images\/I\/61vXRV5ShmL._AC_UL480_FMwebp_QL65_.jpg",
+        "price": "15.00",
+        "old_price": "20.00"
+    },
+    {
+        "id": 8,
+        "name": "Hyaluronic Acid & Collagen",
+        "img": "https:\/\/m.media-amazon.com\/images\/I\/71FMu7UMgGL._SX466_.jpg",
+        "price": "15.00",
+        "old_price": "20.00"
+    },
+    {
+        "id": 9,
+        "name": "Victoria's Secret",
+        "img": "https:\/\/m.media-amazon.com\/images\/I\/31NSX1-QBDL._SX300_SY300_QL70_FMwebp_.jpg",
+        "price": "15.00",
+        "old_price": "20.00"
+    },
+    {
+        "id": 10,
+        "name": "Victoria's Secret",
+        "img": "https:\/\/m.media-amazon.com\/images\/I\/61d6bSCGgsL._SY679_.jpg",
+        "price": "15.00",
+        "old_price": "20.00"
+    },
+    {
+        "id": 11,
+        "name": "Dove Density Boost",
+        "img": "https:\/\/m.media-amazon.com\/images\/I\/61pxjm1vFuL._SX466_.jpg",
+        "price": "10.00",
+        "old_price": "20.00"
+    },
+    {
+        "id": 12,
+        "name": "Dove Scalp",
+        "img": "https:\/\/m.media-amazon.com\/images\/I\/71iunPtblxL._SX466_.jpg",
+        "price": "10.00",
+        "old_price": "25.00"
+    }
+]
