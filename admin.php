@@ -1,7 +1,4 @@
-<?php if (session_status() === PHP_SESSION_NONE) {
-    session_start();
-}
-?>
+
 <?php 
 if (session_status() === PHP_SESSION_NONE) {
     session_start();
@@ -13,7 +10,7 @@ if (session_status() === PHP_SESSION_NONE) {
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Dashboard Navbar</title>
+  <title>🅷𝗘Ⓡ ᴄ𝐴🆁𝐄 </title>
   <link rel="stylesheet" href="css/styles.css">
 
 </head>
@@ -25,6 +22,15 @@ if (session_status() === PHP_SESSION_NONE) {
     </div>
     <ul class="nav-links">
       <li><a href="create.php" class="new-product-btn">New Product</a></li>
+    </ul>
+    <ul class="nav-links">
+      <li><a href="showMesseges.php" class="new-product-btn">Messeges</a></li>
+    </ul>
+    <ul class="nav-links">
+      <li><a href="showProducts.php" class="new-product-btn">Products</a></li>
+    </ul>
+    <ul class="nav-links">
+      <li><a href="showOrder.php" class="new-product-btn">Orders</a></li>
     </ul>
     <ul class="nav-links">
       <li><a href="handlers/logout_handler.php" class="logout-btn">Logout</a></li>

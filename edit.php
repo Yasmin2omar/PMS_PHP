@@ -32,7 +32,7 @@
   <div class="product-card">
     <img src="<?= $_SESSION['search']['img']?>" alt="Product Image">
     <div class="product-info">
-    <form method="get" action="handlers/editItem_handler.php">
+    <form method="post" action="handlers/editItem_handler.php">
       <p><b>Product Name: <input type="input" name="name" value="  <?= $_SESSION['search']['name']?>">&nbsp;&nbsp;</b></p>
       <p><strong>Old_Price: </strong><input type="input"name="old_price" value=" $<?= $_SESSION['search']['old_price']?>"></p>
       <p><strong>New_Price: </strong><input type="input"name="new_price" value=" $<?= $_SESSION['search']['price']?>"></p>

@@ -2,14 +2,6 @@
     session_start();
 }
 ?>
-<?php if (session_status() === PHP_SESSION_NONE) {
-    session_start();
-}
-?>
-<?php
-if (session_status() === PHP_SESSION_NONE) {
-    session_start();
-}?>
 <?php require_once('inc/header.php'); ?>
 <?php include_once("core/function.php"); ?>
 <!-- Header-->
@@ -32,7 +24,7 @@ if (session_status() === PHP_SESSION_NONE) {
                             <?php $totalPay=0; ?>
                             <?php foreach($_SESSION['cartData'] as $key=>$value): ?>
                             <li class="border p-2 my-1"> <?=$value['name']; ?>
-                                <span class="text-success mx-2 mr-auto bold"><?=$value['quantity']." x $".$value['price'];$totalPay+=$value['quantity']*$value['price'] ?></span>
+                                <span class="text-success mx-2 mr-auto bold"><?=$value['quantity']." x $".$value['price'];$totalPay+=$value['quantity']*$value['price'] ;?></span>
                             </li>
                             <?php endforeach; ?>
                         </ul>
@@ -40,7 +32,6 @@ if (session_status() === PHP_SESSION_NONE) {
                     <h3><?="$".$totalPay;?></h3>
                 </div>
             </div>
-
             <div class="col-8">
                             <?php showMessege(); ?>
                 <form  method="POST" action="handlers/checkout_handler.php" class="form border my-2 p-3">

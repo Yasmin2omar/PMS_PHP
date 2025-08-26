@@ -7,7 +7,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Dashboard Navbar</title>
+  <title>🅷𝗘Ⓡ ᴄ𝐴🆁𝐄 </title>
   <link rel="stylesheet" href="css/styles.css">
 
 </head>
@@ -19,14 +19,23 @@
     </div>
 
     <ul class="nav-links">
+      <li><a href="showProducts.php" class="new-product-btn">Products</a></li>
+    </ul>
+    <ul class="nav-links">
+      <li><a href="showOrder.php" class="new-product-btn">Orders</a></li>
+    </ul>
+              <ul class="nav-links">
+      <li><a href="showMesseges.php" class="new-product-btn">Messeges</a></li>
+    </ul>
+    <ul class="nav-links">
+      <li><a href="admin.php" class="new-product-btn">Search</a></li>
+    </ul>
+    <ul class="nav-links">
       <li><a href="handlers/logout_handler.php" class="logout-btn">Logout</a></li>
     </ul>
 
   </nav>
   <div class="admin-container">
-
-
-    <?php showMessege();?>
 
   <div class="product-card">
 

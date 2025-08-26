@@ -1,8 +1,4 @@
 <?php
-if (session_status() === PHP_SESSION_NONE) {
-    session_start();
-}
-
 include_once __DIR__."/../core/function.php";
 if (session_status() === PHP_SESSION_NONE) {
     session_start();
@@ -16,7 +12,6 @@ if($_SERVER['REQUEST_METHOD']=="GET" ){
     if(isset($_GET['delete']) && isset($products[$index])){
     unset($products[$index]);
             $products=array_values($products);
-            array_values($products);
             foreach ($products as $index => &$product) {
                   $product['id'] = $index + 1;
                 }

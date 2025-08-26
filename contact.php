@@ -16,10 +16,11 @@
 <!-- Section-->
 
 <section class="py-5">
-     <?php showMessege(); ?>
+
     <div class="container px-4 px-lg-5 mt-5">
         <div class="row">
             <div class="col-8 mx-auto">
+                <?php showMessege(); ?>
                 <form method="POST"  action="handlers/contact_handler.php" class="form border my-2 p-3" >
                     <div class="mb-3">
                         <div class="mb-3">

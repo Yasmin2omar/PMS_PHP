@@ -21,9 +21,9 @@
         "old_price": "85.00"
     },
     {
-        "id":4,
+        "id": 4,
         "name": "DRMTLGY Anti-Aging",
-        "img": "https://m.media-amazon.com/images/I/61MdRsRV-JL._AC_SX569_.jpg",
+        "img": "https:\/\/m.media-amazon.com\/images\/I\/61MdRsRV-JL._AC_SX569_.jpg",
         "price": "31.00",
         "old_price": "50.00"
     },
@@ -75,5 +75,12 @@
         "img": "https:\/\/m.media-amazon.com\/images\/I\/71iunPtblxL._SX466_.jpg",
         "price": "10.00",
         "old_price": "25.00"
+    },
+    {
+        "id": 12,
+        "name": "Paula's",
+        "img": "https:\/\/m.media-amazon.com\/images\/I\/314GFruBVmL._SY445_SX342_QL70_FMwebp_.jpg",
+        "price": "31.00",
+        "old_price": " 50.00"
     }
 ]

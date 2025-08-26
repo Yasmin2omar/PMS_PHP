@@ -4,7 +4,8 @@ if (session_status() === PHP_SESSION_NONE) {
 }
 
 include_once __DIR__."/../core/function.php";
-if(empty($products=products())){
-    setMessege("danger","There are no products yet.");
+
+if(empty($orders=orders())){
+    setMessege("danger","There are no orders yet.");
 
 }

@@ -83,7 +83,7 @@ if(!file_exists($userDataJson)){
 function saveUserData($name,$email,$address,$phone,$note,$data){
     $userJson=$GLOBALS['userDataJson'];
     $userData=file_get_contents($userJson);
-    $users=json_decode($userData,true);
+    $orders=json_decode($userData,true);
     $product_data=[];
     foreach($_SESSION['cartData'] as $value){
         $product_data[]=[
@@ -91,7 +91,7 @@ function saveUserData($name,$email,$address,$phone,$note,$data){
         "product_price"=>$value['price'],
         "product_quantity"=>$value['quantity']
         ];}
-    $newUser=[
+    $newOrder=[
         "name"=>$name,
         "email"=>$email,
         "address"=>$address,
@@ -99,8 +99,8 @@ function saveUserData($name,$email,$address,$phone,$note,$data){
         "note"=>$note,
         "product_data"=>$product_data
     ];
-    $users[]=$newUser;
-    file_put_contents($userJson,data: json_encode($users,JSON_PRETTY_PRINT));
+    $orders[]=$newOrder;
+    file_put_contents($userJson,data: json_encode($orders,JSON_PRETTY_PRINT));
     return true;
 }
 function products(){
@@ -108,6 +108,18 @@ function products(){
     $productData=file_get_contents($productJson);
     $products=json_decode($productData,true);
     return $products;
+}
+function orders(){
+    $orderJson=__DIR__."/../data/orders.json";
+    $orderData=file_get_contents($orderJson);
+    $orders=json_decode($orderData,true);
+    return $orders;
+}
+function showMessegesToAdmin(){
+    $messegeJson=__DIR__."/../data/messeges.json";
+    $messegeData=file_get_contents($messegeJson);
+    $messeges=json_decode($messegeData,true);
+    return $messeges;
 }
 function productSearch($search){
     $productJson=__DIR__."/../data/products.json";

@@ -1,6 +1,4 @@
 <?php
-
-
 function validateRequired($value,$filedName){
     return(empty($value))?"The $filedName is required":null;
 }
@@ -41,19 +39,19 @@ function validateAddress($address){
 }
 function validateOld_Price($old_price){
     if(preg_match("/[A-Z]/",$old_price)){
-        return"$old_price must be numbers";
+        return"This field must be numbers";
     };    
     if(preg_match("/[a-z]/",$old_price)){
-        return"$old_price must be numbers";
+        return"This field must be numbers";
     };
     return null;
 }
 function validateNew_Price($new_price){
     if(preg_match("/[A-Z]/",$new_price)){
-        return"$new_price must be numbers";
+        return"This field must be numbers";
     };    
     if(preg_match("/[a-z]/",$new_price)){
-        return"$new_price must be numbers";
+        return"This field must be numbers";
     };
     return null;
 }
@@ -117,7 +115,8 @@ function validateUserData($name,$email,$phone,$address,$note){
         "name"=>$name,
         "email"=>$email,
         "phone"=>$phone,
-        "address"=>$address
+        "address"=>$address,
+        "note"=>$note
     ];
     foreach($userData as $fieldName=>$value){
         if($error=validateRequired($value,$fieldName)){
